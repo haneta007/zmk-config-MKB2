@@ -40,8 +40,8 @@ layers:
   - LEFT CONTROL
   - LGUI
   - LALT
-  - {t: INT MUHENKAN, h: Num}
-  - {t: SPACE, h: Fnc}
+  - {t: SPACE, h: Num}
+  - {t: INT HENKAN, h: Fnc}
   - {t: BACKSPACE, h: Fnc}
   - {t: ENTER, h: Mouse}
   - LEFT
@@ -99,8 +99,8 @@ layers:
   - LEFT CONTROL
   - LEFT GUI
   - LALT
-  - INT MUHENKAN
-  - {t: SPACE, type: held}
+  - SPACE
+  - {t: INT HENKAN, type: held}
   - BACKSPACE
   - ENTER
   - {t: ▽, type: trans}
@@ -158,8 +158,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: INT MUHENKAN, type: held}
-  - SPACE
+  - {t: SPACE, type: held}
+  - INT HENKAN
   - BACKSPACE
   - ENTER
   - Sft+SEMI
@@ -217,8 +217,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - INT MUHENKAN
   - SPACE
+  - INT HENKAN
   - BACKSPACE
   - {t: ENTER, type: held}
   - {t: ▽, type: trans}
@@ -356,4 +356,4 @@ layers:
   - B
 combos:
 - p: [40, 39]
-  k: INT HENKAN
+  k: INT MUHENKAN
