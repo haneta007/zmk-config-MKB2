@@ -43,7 +43,7 @@ layers:
   - {t: SPACE, h: Num}
   - {t: SPACE, h: Fnc}
   - {t: SPACE, h: Fnc}
-  - {t: SPACE, h: Num}
+  - {t: ENTER, h: Num}
   - LEFT
   - DOWN
   - RIGHT
