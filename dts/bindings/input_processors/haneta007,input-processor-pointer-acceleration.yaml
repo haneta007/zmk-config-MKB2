@@ -1,0 +1,33 @@
+description: Input processor for piecewise pointer acceleration
+
+compatible: "haneta007,input-processor-pointer-acceleration"
+
+include: ip_zero_param.yaml
+
+properties:
+  type:
+    type: int
+    required: true
+  codes:
+    type: array
+    required: true
+  slow-threshold:
+    type: int
+    required: true
+    description: Maximum absolute input count scaled with the slow ratio
+  fast-threshold:
+    type: int
+    required: true
+    description: Minimum absolute input count scaled with the fast ratio
+  slow-multiplier:
+    type: int
+    required: true
+  slow-divisor:
+    type: int
+    required: true
+  fast-multiplier:
+    type: int
+    required: true
+  fast-divisor:
+    type: int
+    required: true

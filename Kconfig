@@ -1,0 +1,8 @@
+config MKB_POINTER_ACCELERATION
+    bool "MKB pointer acceleration input processor"
+    default y
+    depends on ZMK_POINTING
+    depends on DT_HAS_HANETA007_INPUT_PROCESSOR_POINTER_ACCELERATION_ENABLED
+    help
+      Scale small and large physical pointer movements differently while
+      preserving normal-speed movement.

@@ -1,0 +1,5 @@
+if(CONFIG_MKB_POINTER_ACCELERATION)
+  zephyr_library()
+  zephyr_library_sources(src/input_processor_pointer_acceleration.c)
+  zephyr_include_directories(${APPLICATION_SOURCE_DIR}/include)
+endif()

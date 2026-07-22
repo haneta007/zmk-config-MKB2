@@ -1,0 +1,19 @@
+#include <zephyr/dt-bindings/input/input-event-codes.h>
+
+/ {
+    /omit-if-no-ref/ paccel: paccel {
+        compatible = "haneta007,input-processor-pointer-acceleration";
+        #input-processor-cells = <0>;
+        type = <INPUT_EV_REL>;
+        codes = <INPUT_REL_X INPUT_REL_Y>;
+
+        // Absolute movement counts per PMW3610 report (currently about 14 ms).
+        slow-threshold = <3>;
+        fast-threshold = <11>;
+        slow-multiplier = <1>;
+        slow-divisor = <2>;
+        fast-multiplier = <2>;
+        fast-divisor = <1>;
+        track-remainders;
+    };
+};

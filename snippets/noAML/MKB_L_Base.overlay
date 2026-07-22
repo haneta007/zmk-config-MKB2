@@ -1,9 +1,11 @@
+#include <input/mkb_pointer_acceleration.dtsi>
+
 / {
     trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         status = "okay";
         device = <&trackball_split>;
-        input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT|INPUT_TRANSFORM_Y_INVERT)>;
+        input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT|INPUT_TRANSFORM_Y_INVERT)>, <&paccel>;
 
         scroll {
             layers = <1>;
